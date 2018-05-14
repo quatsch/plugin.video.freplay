@@ -134,6 +134,7 @@ def list_videos(channel, folder):
             if 'date_diffusion' in emission:
                 year = emission['date_diffusion'][:4]            
                 titre += ' - ' + emission['date_diffusion'][:10].encode('utf-8')
+                titre += ' - ' + emission['date_diffusion'][11:].encode('utf-8')
             if 'image_medium' in emission:
                 image = imgURL % emission['image_medium']                              
             
